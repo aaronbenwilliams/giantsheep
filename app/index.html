@@ -1,22 +1,135 @@
 <!doctype html>
-<html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title>FastShell by @_Karamii</title>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Giantsheep - Woolcome friends!</title>
+	<meta name="author" content="giantsheep" />
+	<meta name="description" content="Giantsheep - Pen of digital designer, Aaron Williams" />
+	<meta name="keywords"  content="giant,sheep,aaron,williams,webdesign,digital,design" />
+	<meta name="Resource-type" content="Document" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.pagepiling.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-    <link href="//www.google-analytics.com" rel="dns-prefetch">
-    <link href="//ajax.googleapis.com" rel="dns-prefetch">
-    <link href="assets/css/style.min.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-    <script src="assets/components/modernizr/modernizr.js"></script>
-  </head>
+	<script type="text/javascript" src="assets/js/jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		var deleteLog = false;
+
+		$(document).ready(function() {
+      $('#pagepiling').pagepiling({
+        menu: '#menu',
+        anchors: ['into', 'about', 'latest', 'contact'],
+        navigation: {
+        'textColor': '#465362',
+        'bulletsColor': '#F9DC5C',
+        'position': 'right',
+        'tooltips': ['Woolcome!', 'What the flock?', 'What ewe up to?', 'Bleat at us!']
+        }
+      });
+    });
+  </script>
+
+</head>
   <body>
 
-    <header class="header" role="banner">
+		<span class="toggle-button">
+		  <div class="menu-bar menu-bar-top"></div>
+		  <div class="menu-bar menu-bar-middle"></div>
+		  <div class="menu-bar menu-bar-bottom"></div>
+		</span>
+
+		<div class="menu-wrap">
+		  <ul class="menu">
+				<li data-menuanchor="intro" class="active"><a href="#intro">Woolcome!</a></li>
+	  		<li data-menuanchor="about"><a href="#about">What the flock?</a></li>
+	  		<li data-menuanchor="latest"><a href="#latest">What ewe up to?</a></li>
+				<li data-menuanchor="contact"><a href="#contact">Bleat at us!</a></li>
+		  </ul>
+			<ul class="social">
+				<li><a href="thisisalink"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="thisisalink"><i class="fab fa-behance"></i></a></li>
+				<li><a href="thisisalink"><i class="fab fa-dribbble"></i></a></li>
+			</ul>
+			<span>Copyright 2018 Giantsheep</span>
+		</div>
+
+  	<div id="pagepiling">
+
+	    <div class="section" id="intro">
+        <img src="assets/img/logo.svg" class="lead-img" width="298" height="59" />
+
+        <div class="container">
+         <div class="row">
+           <div class="col-12">
+             <img src="assets/img/head-intro.svg" class="img-responsive" width="554" height="247" />
+             <p>The pen of digital designer, Aaron Williams</p>
+           </div>
+         </div>
+       </div>
+	    </div>
+
+      <div class="section" id="about">
+	    	<div class="intro">
+	    		<img src="assets/img/head-about.svg" class="headline img-responsive" width="557" height="125" />
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <p>Giantsheep is the hub of Welsh digital designer and, urgh... I hate this term, digital nomad, Aaron Williams.</p>
+                <p>I work with Code Enigma and can usually be found somewhere around Europe with my wife, Dragana.</p>
+                <p>Here you can find my previous work (check out the icons below), what I’m up to now and if you’ve got any good ideas or projects in mind, get in touch with me.</p>
+                <ul class="social">
+                  <li><a href="thisisalink"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="thisisalink"><i class="fab fa-behance"></i></a></li>
+                  <li><a href="thisisalink"><i class="fab fa-dribbble"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+	    	</div>
+	    </div>
+
+      <div class="section" id="latest">
+      	<div class="intro">
+	    		<img src="assets/img/head-latest.svg" class="headline img-responsive" width="499" height="51" />
+
+					<div class="btn-bkg"></div>
+
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<p>We’re currently living in <a href="#">Sarajevo</a> in Bosnia &amp; Herzegovina, redesigning the <a href="#">Code Enigma website</a> and getting ready to get <a href="#">married again</a>, but in Corfu this time :)</p>
+							</div>
+						</div>
+					</div>
+	    	</div>
+	    </div>
+
+      <div class="section" id="contact">
+	    	<div class="intro">
+					<img src="assets/img/head-contact.svg" class="headline img-responsive" width="334" height="49" />
+
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<form action="https://formspree.io/aaron@giantsheep.net" method="POST">
+						      <input type="text" placeholder="Your name" name="name" />
+						      <input type="text" placeholder="Email address" name="_replyto" />
+									<textarea placeholder="Your message" rows="4" name="_text"></textarea>
+									<input type="submit" value="baa-ram-ewe" />
+									<input type="text" name="_gotcha" style="display:none" />
+						    </form>
+							</div>
+						</div>
+					</div>
+	    	</div>
+	    </div>
+
+  	</div>
+
+    <!-- <header class="header" role="banner">
       <div class="logo">
         <a href="/">
           <img src="assets/img/logo.png" alt="Logo">
@@ -41,19 +154,19 @@
 
     <footer class="footer" role="contentinfo">
 
-    </footer>
+    </footer> -->
 
-    <script src="assets/components/jquery/jquery.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
+			var $toggleButton = $(".toggle-button"),
+				$menuWrap = $(".menu-wrap");
+
+				$toggleButton.on("click", function() {
+				$(this).toggleClass("button-open");
+				$menuWrap.toggleClass("menu-show");
+			});
     </script>
 
   </body>

@@ -1,0 +1,72 @@
+#intro,
+#about,
+#latest,
+#contact{
+  background-size: cover;
+}
+
+#intro {
+  background-image: url('../img/bg1.jpg');
+
+  p {
+    color: rgba(70,83,98,.5);
+    margin-top: 0;
+  }
+}
+
+#about {
+  background-image: url('../img/bg2.jpg');
+  padding: 6% 0 0 0;
+
+  p {
+    color: #F9DC5C;
+  }
+}
+
+#latest {
+  background-image: url('../img/bg3.jpg');
+  padding: 6% 0 0 0;
+
+  p {
+    color: #465362;
+
+    a {
+      color: #465362;
+      text-decoration: none;
+      font-weight: 700;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+
+  .btn-bkg {
+    display: block;
+    height: 40px;
+    width: 45px;
+    background-color: #465362;
+    border-radius: 7px;
+    position: absolute;
+    right: 39px;
+    top: 28px;
+  }
+}
+
+#contact {
+  background-image: url('../img/bg4.jpg');
+  padding: 6% 0 0 0;
+  color: #F9DC5C;
+}
+
+@media only screen and (max-width: 33.75em) {
+  .img-responsive {
+    display: block;
+    width: 80%;
+  }
+}
