@@ -491,6 +491,10 @@ textarea {
       .menu li a:hover {
         opacity: .5; }
 
+@media only screen and (max-width: 45em) {
+  .menu, .menu-wrap, .toggle-button, .btn-bkg {
+    display: none; } }
+
 #intro,
 #about,
 #latest,

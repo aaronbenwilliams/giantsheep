@@ -128,3 +128,9 @@ $border: 4px solid $menubar-color;
     }
   }
 }
+
+@media only screen and (max-width: 45em) {
+  .menu, .menu-wrap, .toggle-button, .btn-bkg {
+    display: none;
+  }
+}
